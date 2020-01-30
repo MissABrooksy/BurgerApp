@@ -1,15 +1,33 @@
-
 <h1>Eat Da Burger</h1>
 <h2> Developed by {{ name }} </h2>
+
 <div id="Burgers">
-    <div id="addedBurgers">
-        <h2>Ready to Eat</h2>
-        
-        {{#if isEaten}}
-<ul>
-    <p>HI</p>
-</ul>
-        {{/if}}
-    </div>
+    <img id="pic" src="../public/assets/img/burger.jpg">
 </div>
 
+<div id="burgerText">
+    <form id="burgerInput">
+        <input id="typedBugers" type="text" placeholder="Enter Burger">
+        <button id="submit" type="submit">Make the Burger</button>
+    </form>
+</div>
+
+<div id="addedBurgers">
+    <h2>Ready to Eat</h2>
+
+    {{#if isEaten}}
+    <ul>
+        <p>HI</p>
+    </ul>
+    {{/if}}
+</div>
+
+<div id="eatenBurgers">
+    <h2>Ready to Eat</h2>
+
+    {{#if isEaten}}
+    <ul>
+        <p>HI</p>
+    </ul>
+    {{/if}}
+</div>
