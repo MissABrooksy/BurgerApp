@@ -14,7 +14,9 @@ app.get('/', (req, res) => {
 	res.render('index', { 
 		title: 'Eat Da Burger',
 		name: 'Andrea',
-		isEaten: true
+		isEaten: false,
+		eaten: true
+
 	 });
 });
 

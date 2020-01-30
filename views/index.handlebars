@@ -7,7 +7,7 @@
 
 <div id="burgerText">
     <form id="burgerInput">
-        <input id="typedBugers" type="text" placeholder="Enter Burger">
+        <input id="typedBugers" type="text" name ="burgerName" placeholder="Enter Burger">
         <button id="submit" type="submit">Make the Burger</button>
         {{!-- onclick add to the "added burgers" div" --}}
     </form>
@@ -15,18 +15,20 @@
 
 <div id="addedBurgers">
     <h2>Ready to Eat</h2>
-
+{{#each burger}}
     {{#if isEaten}}
     <ul>
+        {{this.burgerName}}
         {{!-- // append //<button> --}}
     </ul>
     {{/if}}
+    {{/each}}
 </div>
 
 <div id="eatenBurgers">
     <h2>Eaten!</h2>
 
-    {{#if isEaten === true}}
+    {{#if eaten}}
     <ul>
         {{!-- display value of the button --}}
     </ul>
